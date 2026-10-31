@@ -1,0 +1,15 @@
+﻿Test Case ID,Module,Scenario,Steps,Expected Result,Environment,Execution Status
+TC-001,Home,Verify home page loads,Open https://www.cynbit.in/,Home page loads without error and primary content is visible,Chrome desktop,Not executed
+TC-002,Navigation,Verify top navigation routes,Open each top navigation item and use browser Back,Each item opens the expected page; Back returns to prior page,Chrome desktop,Not executed
+TC-003,Contact,Submit empty contact form,Open /contact and select Send Inquiry with all fields empty,Required fields show clear validation and no unintended submission occurs,Chrome desktop/mobile,Not executed
+TC-004,Contact,Validate email format,Enter invalid email and submit the contact form,Invalid email is rejected with a clear message,Chrome desktop/mobile,Not executed
+TC-005,Contact,Submit valid contact inquiry,Enter test data and submit,Success confirmation is shown and inquiry is received by the configured system,Chrome desktop,Not executed
+TC-006,Careers,Open QA Testing Intern details,Open /careers and click View details for QA Testing Intern,Correct job details page opens; application path is clear,Chrome desktop/mobile,Not executed
+TC-007,Responsive,Check mobile layout,"Use 360×800 and 412×915 viewports on Home, Contact and Careers","No clipping, overlap or unintended horizontal scroll",Android Chrome,Not executed
+TC-008,Accessibility,Keyboard navigation,"Use Tab and Shift+Tab across navigation, forms and footer",Focus is visible and order is logical; controls are keyboard operable,Desktop browser,Not executed
+TC-009,Accessibility,Check zoom/reflow,Zoom browser to 200% on Contact and Careers,Content remains readable and controls usable without loss of content,Desktop browser,Not executed
+TC-010,Footer,Verify legal links,"Open Privacy Policy, Terms and Cookies from footer",Correct destinations load and are relevant,Chrome desktop,Not executed
+TC-011,Newsletter,Verify newsletter signup,"Use footer newsletter CTA; test empty, invalid and valid input paths",Validation and success/failure feedback are clear,Chrome desktop/mobile,Not executed
+TC-012,Performance,Run Lighthouse and inspect console,"Run Lighthouse on Home, Contact, Careers; inspect Console and Network","Record scores, Core Web Vitals, console errors and failed critical requests",Chrome desktop,Not executed
+TC-013,Security baseline,Verify HTTPS and mixed content,Open key routes; inspect browser security and Network for mixed-content requests,HTTPS is used and no mixed content is loaded,Chrome desktop,Not executed
+TC-014,Content,Review numeric claims,Record prominent metrics and request source/owner validation,"Claims are accurate, contextualized and approved",Any browser,Review required
